@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Юный фотокорр — как снять фоторепортаж</title>
+<style>
+:root{--ink:#1d2340;--bg:#fff8e8;--y:#ffc93c;--b:#3b6cff;--p:#ff5d8f;--g:#2bb673;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Trebuchet MS',Verdana,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:18px}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+header{background:var(--b);color:#fff;padding:60px 0 70px;position:relative;overflow:hidden}
+header h1{font-size:clamp(32px,6vw,56px);line-height:1.1;margin-bottom:14px}
+header h1 span{color:var(--y)}
+header p{max-width:560px;font-size:20px;margin-bottom:26px}
+.btn{display:inline-block;background:var(--y);color:var(--ink);padding:14px 28px;border-radius:40px;text-decoration:none;font-weight:800;border:0;cursor:pointer;font-size:18px;font-family:inherit;transition:.2s}
+.btn:hover{transform:scale(1.05)}
+.cam{position:absolute;right:6%;top:50%;transform:translateY(-50%) rotate(8deg);font-size:150px;opacity:.9}
+section{padding:56px 0}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:8px}
+.sub{opacity:.75;margin-bottom:30px}
+.rules{display:grid;gap:16px}
+.rule{background:var(--card);border-radius:20px;padding:20px 22px 20px 84px;position:relative;box-shadow:0 4px 0 rgba(29,35,64,.12)}
+.rule .n{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:var(--p);color:#fff;font-weight:800;font-size:24px;display:grid;place-items:center}
+.rule:nth-child(3n+2) .n{background:var(--g)}
+.rule:nth-child(3n) .n{background:var(--b)}
+.rule h3{font-size:20px;margin-bottom:2px}
+.rule p{font-size:16px;opacity:.85}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.shot{background:var(--y);border-radius:20px;padding:22px;text-align:center}
+.shot b{font-size:44px;display:block}
+.shot h3{margin:6px 0}
+.shot p{font-size:15px}
+.alt{background:#eaf0ff}
+.stop{background:#ffe3ea;border-radius:20px;padding:22px 26px;border-left:8px solid var(--p)}
+.stop h3{margin-bottom:6px}
+.quiz{background:var(--ink);color:#fff}
+.q{background:#2a3160;border-radius:20px;padding:24px;margin-bottom:6px}
+.q h3{font-size:21px;margin-bottom:14px}
+.opt{display:block;width:100%;text-align:left;background:#fff;color:var(--ink);border:3px solid transparent;border-radius:14px;padding:12px 16px;margin-bottom:10px;font-size:17px;font-family:inherit;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--y)}
+.opt.ok{background:#c9f4dc;border-color:var(--g)}
+.opt.bad{background:#ffd1da;border-color:var(--p)}
+.fb{min-height:24px;font-size:16px;color:var(--y)}
+.prog{height:10px;background:#2a3160;border-radius:10px;margin-bottom:20px}
+.prog div{height:100%;width:0;background:var(--y);border-radius:10px;transition:.3s}
+.res{text-align:center}
+.res .big{font-size:64px}
+footer{padding:30px 0;text-align:center;font-size:15px;opacity:.7}
+@media(max-width:700px){.cam{display:none}.rule{padding-left:76px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Юный <span>фотокорреспондент</span></h1>
+<p>Идёшь на молодёжное мероприятие и нужно снять фоторепортаж? Здесь всё главное: 10 простых правил и тест, чтобы проверить себя.</p>
+<a class="btn" href="#rules">Читать правила</a>
+</div><div class="cam" aria-hidden="true">📸</div></header>
+
+<section id="rules"><div class="wrap">
+<h2>10 правил фоторепортажа</h2>
+<p class="sub">Фоторепортаж — это рассказ о событии в картинках. Зритель должен почувствовать, будто он там был.</p>
+<div class="rules">
+<div class="rule"><div class="n">1</div><h3>Подготовься заранее</h3><p>Зарядь телефон или камеру, освободи память, протри объектив. Узнай, что будет на событии и во сколько.</p></div>
+<div class="rule"><div class="n">2</div><h3>Приди пораньше</h3><p>Осмотрись: где сцена, где свет, откуда лучше снимать. Снимай подготовку — это тоже часть истории.</p></div>
+<div class="rule"><div class="n">3</div><h3>Снимай три плана</h3><p>Общий (весь зал), средний (группа людей), крупный (лицо, руки, деталь). Из них складывается история.</p></div>
+<div class="rule"><div class="n">4</div><h3>Лови эмоции</h3><p>Улыбки, удивление, смех, волнение. Живой кадр лучше постановочного, когда все смотрят в камеру.</p></div>
+<div class="rule"><div class="n">5</div><h3>Следи за светом</h3><p>Не снимай против окна или яркой лампы: люди выйдут тёмными. Встань так, чтобы свет падал на лица.</p></div>
+<div class="rule"><div class="n">6</div><h3>Держи ровно и не дрожи</h3><p>Прижми локти к телу, задержи дыхание на секунду. Следи, чтобы горизонт не заваливался.</p></div>
+<div class="rule"><div class="n">7</div><h3>Ищи интересный ракурс</h3><p>Присядь, подойди ближе, снимай через что-нибудь. Один и тот же момент можно показать по-разному. Лучше подойти, чем приближать зумом.</p></div>
+<div class="rule"><div class="n">8</div><h3>Уважай людей</h3><p>Если человек просит не снимать, не снимай. Не фотографируй в неприятные моменты и не выкладывай чужие фото без разрешения.</p></div>
+<div class="rule"><div class="n">9</div><h3>Не мешай событию</h3><p>Не лезь на сцену, не загораживай зрителей и не выходи без разрешения организатора. Безопасность важнее кадра.</p></div>
+<div class="rule"><div class="n">10</div><h3>Снимай много, отбирай лучшее</h3><p>Сделай много кадров, потом оставь самые сильные: резкие, светлые, с эмоциями. Для репортажа хватит 10–15 фото. Подпиши: что, где и когда.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Какие кадры нужны в репортаже</h2>
+<p class="sub">Чтобы история получилась цельной, возьми каждого понемногу.</p>
+<div class="shots">
+<div class="shot"><b>🏟️</b><h3>Общий план</h3><p>Где всё происходит и сколько людей</p></div>
+<div class="shot"><b>👥</b><h3>Средний план</h3><p>Что делают люди, как общаются</p></div>
+<div class="shot"><b>😄</b><h3>Крупный план</h3><p>Эмоции, лица, руки</p></div>
+<div class="shot"><b>🎈</b><h3>Детали</h3><p>Плакаты, награды, мелочи события</p></div>
+</div>
+<br>
+<div class="stop"><h3>Важно</h3>Фото людей можно публиковать только с согласия. Если сомневаешься, спроси у взрослого или организатора.</div>
+</div></section>
+
+<section class="quiz" id="quiz"><div class="wrap">
+<h2>Проверь себя</h2>
+<p class="sub" style="opacity:.8">8 вопросов. Выбери ответ, и сразу увидишь, верно ли.</p>
+<div class="prog"><div id="bar"></div></div>
+<div id="box"></div>
+</div></section>
+
+<footer>Школа видео и фото · Петрозаводск</footer>
+
+<script>
+const Q=[
+{q:"Что нужно сделать до начала события?",a:["Ничего, снимать можно сразу","Зарядить устройство, освободить память, узнать программу","Взять побольше друзей"],c:1,e:"Разряженный телефон или полная память — главная причина пропущенных кадров."},
+{q:"Когда лучше прийти на событие?",a:["Пораньше, чтобы осмотреться","В самом конце","Точно к началу, ни минутой раньше"],c:0,e:"Заранее найдёшь хорошие места и снимешь подготовку."},
+{q:"Какие планы нужны в репортаже?",a:["Только крупные","Общий, средний и крупный","Только общий"],c:1,e:"Три плана вместе рассказывают полную историю."},
+{q:"Как встать относительно света?",a:["Спиной к свету, лицом к людям, свет падает на их лица","Против окна, чтобы было красиво","Не имеет значения"],c:0,e:"Против света лица выходят тёмными."},
+{q:"Человек просит его не снимать. Что делаешь?",a:["Снимаю быстро, пока не заметил","Не снимаю и извиняюсь","Спорю, что мне можно"],c:1,e:"Уважать людей — первое правило хорошего фотографа."},
+{q:"Что делать, если хочется снять момент со сцены?",a:["Залезть на сцену","Остаться в зале и не мешать зрителям","Встать перед всеми"],c:1,e:"Ты не должен мешать событию и зрителям."},
+{q:"Как получить более резкий кадр?",a:["Прижать локти и задержать дыхание","Размахивать рукой","Снимать на ходу бегом"],c:0,e:"Устойчивая поза убирает дрожание рук."},
+{q:"Что делать после съёмки?",a:["Выложить все кадры подряд","Выбрать лучшие и подписать: что, где, когда","Удалить всё"],c:1,e:"Редактор в репортаже — это ты: оставляем сильные кадры."}
+];
+let i=0,score=0;
+const box=document.getElementById('box'),bar=document.getElementById('bar');
+function show(){
+ bar.style.width=(i/Q.length*100)+'%';
+ if(i>=Q.length){
+  const g=score>=7?['🏆','Отлично! Ты готов к репортажу.']:score>=5?['👍','Хорошо! Перечитай пару правил.']:['📚','Давай перечитаем правила и попробуем ещё раз.'];
+  box.innerHTML='<div class="q res"><div class="big">'+g[0]+'</div><h3>Результат: '+score+' из '+Q.length+'</h3><p>'+g[1]+'</p><br><button class="btn" id="again">Пройти ещё раз</button></div>';
+  document.getElementById('again').onclick=()=>{i=0;score=0;show()};return;}
+ const q=Q[i];
+ box.innerHTML='<div class="q"><h3>'+(i+1)+'. '+q.q+'</h3>'+q.a.map((t,k)=>'<button class="opt" data-k="'+k+'">'+t+'</button>').join('')+'<div class="fb" id="fb"></div></div>';
+ box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+  const k=+b.dataset.k;box.querySelectorAll('.opt').forEach(x=>x.disabled=true);
+  box.querySelectorAll('.opt')[q.c].classList.add('ok');
+  if(k===q.c){score++;document.getElementById('fb').textContent='Верно! '+q.e}else{b.classList.add('bad');document.getElementById('fb').textContent='Не совсем. '+q.e}
+  const n=document.createElement('button');n.className='btn';n.style.marginTop='12px';n.textContent=i<Q.length-1?'Дальше':'Результат';n.onclick=()=>{i++;show()};box.firstChild.appendChild(n);
+ });
+}
+show();
+</script>
+</body>
+</html>
